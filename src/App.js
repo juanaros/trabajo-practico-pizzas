@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Context.Provider value={globalState}>
-        <BrowserRouter basename="/mamma-mia">
+        <BrowserRouter basename="/">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

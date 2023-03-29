@@ -14,7 +14,7 @@ export default function Home() {
 
   const navigate = useNavigate();
 
-  const pizzaDetailClick = (id) => {
+  const goToDetails = (id) => {
     navigate(`/pizza/${id}`);
   };
 
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <Card.Text>${type.price}</Card.Text>
             <Card.Footer className="d-flex justify-content-center gap-2">
-                <Button onClick={() => pizzaDetailClick(type.id)}>
+                <Button onClick={() => goToDetails(type.id)}>
                   Ver más
                 </Button>
                 <Button
